@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BulbProject</title>
+</head>
+<style>
+    *{margin: 0;padding: 0;box-sizing: border-box;overflow: hidden;}
+    h1{
+        text-align: center;
+    }
+</style>
+<body>
+    <div class="container">
+        <h1>Project 1</h1>
+        <div class="image">
+            <img id="image" src="./pic_bulboff.gif" alt="Bulb off">
+            <button onclick="turnOnLight()" class="onButton">Turn On Light</button>
+            <button onclick="turnOffLight()" class="offButton">Turn Off Light</button>
+        </div>
+    </div>
+
+
+<script>
+function turnOnLight() {
+    document.getElementById("image").src = "./pic_bulbon.gif"
+    
+}
+function turnOffLight() {
+    document.getElementById("image").src = "./pic_bulboff.gif"    
+}
+    </script>
+</body>
+</html>
